@@ -19,7 +19,7 @@
 |         일정<br/>단건 삭제         | DELETE |  /api/schedules/{id}   |                                 -                                 |                                                     -                                                     |            200<br/>404            |
 
 ## ERD
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## 개발 환경
 * ![JAVA](https://camo.githubusercontent.com/457a848193ea3168ad5602c0096e9742da98988e1066f9b3125175a6a0f4f9c7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176612d3030373339363f267374796c653d666f722d7468652d6261646765266c6f676f3d6a617661266c6f676f436f6c6f723d7768697465)
