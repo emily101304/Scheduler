@@ -6,3 +6,5 @@ CREATE TABLE schedule (
                            inti_date TIMESTAMP,                      -- 작성일
                            mod_date TIMESTAMP                -- 입사일
 );
+
+Show table;
