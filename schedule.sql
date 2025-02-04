@@ -4,5 +4,5 @@ CREATE TABLE schedule (
                            todo VARCHAR NOT NULL,         -- 할 일, NULL을 허용하지 않음
                            password VARCHAR NOT NULL,          -- 비밀번호, NULL을 허용하지 않음
                            inti_date TIMESTAMP,                      -- 작성일
-                           mod_date TIMESTAMP                -- 입사일
+                           mod_date TIMESTAMP                -- 수정일
 );
