@@ -10,6 +10,7 @@ import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Repository
@@ -33,8 +34,8 @@ public class ScheduleRepositoryImpl implements ScheduleRepository{
             ps.setString(1, schedule.getUser());
             ps.setString(2, schedule.getTodo());
             ps.setString(3, schedule.getPassword());
-            ps.setString(4, schedule.getInitDate());
-            ps.setString(5, schedule.getModDate());
+            ps.setString(4, String.valueOf(schedule.getInitDate()));
+            ps.setString(5, String.valueOf(schedule.getModDate()));
             return ps;
         }, keyHolder);
 

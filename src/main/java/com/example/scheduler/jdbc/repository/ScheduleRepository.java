@@ -12,5 +12,4 @@ public interface ScheduleRepository {
     List<Schedule> findAll();
     Schedule updateTodo(Long id, String todo, String modDate);
     void deleteById(Long id);
-
 }

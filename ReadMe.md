@@ -10,13 +10,13 @@
 🌗 `Lv.6` `Challenge` null 체크 및 특정 패턴에 대한 검증 수행 <br>
 
 ## API 명세서
-|       Description       | Method |          Path          |                              Request                              |                                                 Response                                                  |          StatusCode          |
-|:-----------------------:|:------:|:----------------------:|:-----------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|:----------------------------:|
-|          일정 등록          |  POST  |     /api/schedules     | [{"user" : String,<br/>"todo" : String,<br/>"password" : String}] | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |             201              |
-|      일정<br/>전체 조회       |  GET   |     /api/schedules     |              [{"user" : String,<br/>"date": String}]              | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |             200              |
-|      일정<br/>단건 조회       |  GET   |  /api/schedules/{id}   |                                 -                                 | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |     200<br/>400<br/>404      |
-|      일정<br/>단건 수정       | PATCH  |  /api/schedules/{id}   |                                 -                                 | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |     200<br/>400<br/>404      |
-|         일정<br/>단건 삭제         | DELETE |  /api/schedules/{id}   |                                 -                                 |                                                     -                                                     |            200<br/>404            |
+|       Description       | Method |          Path          |                              Request                              |                                                 Response                                                  |     StatusCode      |
+|:-----------------------:|:------:|:----------------------:|:-----------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------:|:-------------------:|
+|          일정 등록          |  POST  |     /api/schedules     | [{"user" : String,<br/>"todo" : String,<br/>"password" : String}] | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |         200         |
+|      일정<br/>전체 조회       |  GET   |     /api/schedules     |              [{"user" : String,<br/>"date": String}]              | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] |         200         |
+|      일정<br/>단건 조회       |  GET   |  /api/schedules/{id}   |                                 -                                 | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] | 200<br/>400<br/>404 |
+|      일정<br/>단건 수정       | PATCH  |  /api/schedules/{id}   |                                 -                                 | [{"id" : int,<br/>"user" : String,<br/>"todo" : String,<br/>"initDate" : String,<br/>"modDate" : String}] | 200<br/>400<br/>404 |
+|         일정<br/>단건 삭제         | DELETE |  /api/schedules/{id}   |                                 -                                 |                                                     -                                                     |     200<br/>404     |
 
 ## ERD
 ![img_1.png](img_1.png)
